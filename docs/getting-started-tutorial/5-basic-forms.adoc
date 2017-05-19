@@ -53,7 +53,7 @@ import net.liftweb.http.SHtml
   def sendMessage = {
     var message: String = ""
 
-    "#new-message" #> SHtml.text(message, message = _) &
+    "#new-message" #> SHtml.text("", message = _) &
     "type=submit" #> SHtml.submitButton(() => {
       messageEntries ::= message
     })
