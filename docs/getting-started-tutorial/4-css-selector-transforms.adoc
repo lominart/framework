@@ -147,6 +147,8 @@ template:
 
 ```
 ...
+import net.liftweb.util.ClearClearable
+...
   def messages = {
     messageEntries :+= "It is now " + formattedTimeNow
 
